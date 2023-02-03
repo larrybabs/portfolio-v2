@@ -53,3 +53,8 @@ body{
   border-radius: 50%;
   padding: 100px;
 }
+.project-img{
+  width: 428px;
+height: 441px;
+border-radius: 30px;
+}
