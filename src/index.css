@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Suisse Light';
+    src: url('./assets/fonts/SuisseIntl-Light.ttf');
+  }
+
+  @font-face {
+    font-family: 'Antique Olive';
+    src: url('./assets/fonts/antique-olive/ANTIQUE.ttf');
+  }
+  
+  body {
+    font-family: 'Suisse Light', serif;
+  }
+  h1{
+      font-family: 'Antique Olive', serif;
+  }
