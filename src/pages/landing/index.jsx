@@ -1,6 +1,30 @@
 import arrow from "../../assets/img/arrowDown.svg";
 import Lifee from "../../assets/img/lifee.png";
+import html from "../../assets/img/html.png";
+import css from "../../assets/img/css.png";
+import figma from "../../assets/img/figma.png";
+import react from "../../assets/img/react.png";
+import javascript from "../../assets/img/javascript.png";
+import github from "../../assets/img/github.png";
 import {BiLinkExternal} from 'react-icons/bi'
+import { motion } from "framer-motion";
+
+
+// 2. Defining Variants
+const marqueeVariants = {
+    animate: {
+      x: [0, -1035],
+      transition: {
+        x: {
+          repeat: Infinity,
+          repeatType: "loop",
+          duration: 5,
+          ease: "linear",
+        },
+      },
+    },
+  };
+  
 
 const Landing = () => {
   return (
@@ -100,6 +124,44 @@ const Landing = () => {
       <section id="skills">
       <h1 className="font-bold text-2xl p-5 mt-10">Skills</h1>
       
+     <div className="marquee">
+     <motion.div
+          className="track"
+          variants={marqueeVariants}
+          animate="animate"
+        >
+        
+                <img src={css} alt="css" />
+                <img src={html} alt="html" className="mx-20"/>
+                <img src={html} alt="html" />
+                <img src={html} alt="html" />
+                <img src={html} alt="html" />
+                <img src={html} alt="html" />
+                <img src={html} alt="html" />
+            
+            </motion.div>
+     </div>
+    
+
+      </section>
+
+      <section>
+      <div>
+      <div className="marquee">
+                {/* 3. Using framer motion */}
+        <motion.div
+          className="track"
+          variants={marqueeVariants}
+          animate="animate"
+        >
+          <h1 className="text-[120px]">
+            Let's Work Together. Let's Work Together. Let's Work Together. Let's
+            Work Together. Let's Work Together. Let's Work Together. Let's Work
+            Together
+          </h1>
+        </motion.div>
+      </div>
+    </div>
       </section>
       {/* <h1 className="text-5xl font-bold text-white">Building greatness</h1> */}
     </div>
