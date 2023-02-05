@@ -4,11 +4,11 @@ body{
 
 .bg-lines{
   width: 24px;
-  height: 300vh;
+  height: 400vh;
   border-left: 1px solid white;
   border-right: 1px solid white;
   /* margin: 0 100px; */
-  opacity: 0.05;
+  opacity: 0.04;
   z-index: -2;
   position: absolute;
   top: 0;
@@ -76,4 +76,7 @@ border-radius: 30px;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #ffffff;
   text-transform: lowercase;
+}
+p{
+  opacity: 0.7;
 }
