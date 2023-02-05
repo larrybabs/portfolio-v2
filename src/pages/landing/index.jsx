@@ -17,7 +17,7 @@ import {
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { motion } from "framer-motion";
-import AnimatedTextWord from "../../components/Animatedword";
+// import AnimatedTextWord from "../../components/Animatedword";
 import { useState } from "react";
 
 // 2. Defining Variants
@@ -82,7 +82,7 @@ const handleClick = () => {
           </a>
         </div>
         <div onClick={handleClick} className="cursor-pointer md:hidden z-20">
-        {!nav ? <FaBars /> : <FaTimes />}
+        {!nav ? <FaBars size="30"/> : <FaTimes size="30"/>}
       </div>
       <ul
         className={
@@ -151,14 +151,14 @@ const handleClick = () => {
       </nav>
 
       <section className="pt-10" id="hero">
-        <div className="p-4 text-center mt-20 relative">
+        <div className="p-4 text-center md:mt-20 relative">
           <p className="md:absolute left-[350px] text-2xl">Hi there! 👋🏽 I'm a</p>
           <h1 className="font-bold text-7xl md:text-[186px] leading-[100%] tracking-[-.085em] ">
             front - end designer.
             {/* <AnimatedTextWord text="hello world"/> */}
             <span className="md:text-[96px]">👨🏽‍💻</span>
           </h1>
-          <div className="hidden md:block w-[624px] h-[472px] bg-[#BD6EC5] rounded-[30px] absolute -z-[2] bottom-0 right-[160px]"></div>
+          <div className="w-[230px] h-[220px] md:w-[624px] md:h-[472px] bg-[#BD6EC5] rounded-[30px] absolute -z-[2] bottom-0 right-[160px]"></div>
         </div>
       </section>
 
@@ -176,7 +176,7 @@ const handleClick = () => {
               </div>
             </div>
             <div>
-              <p className="text-[37px] leading-[60px] w-full md:w-[680px]">
+              <p className="text-[30px] md:text-[37px] md:leading-[60px] w-full md:w-[680px]">
                 I’m a Front-end Developer and a UI/UX Designer passionate about
                 building new tech solutions and creating a seamless user
                 experience. What would you do if you had a software expert
@@ -199,10 +199,10 @@ const handleClick = () => {
               className="project-img"
             />
             <div className="px-6 py-2 underline flex justify-between">
-              <a href="/" className="flex place-items-center">
+              <a href="https://github.com/larrybabs" target="_blank" rel="noreferrer" className="flex place-items-center">
                 Code <BiLinkExternal />
               </a>
-              <a href="/" className="flex place-items-center">
+              <a href="https://www.lifeeremit.com/" target="_blank" rel="noreferrer" className="flex place-items-center">
                 Demo <BiLinkExternal />
               </a>
             </div>
@@ -273,7 +273,7 @@ const handleClick = () => {
               variants={marqueeVariants}
               animate="animate"
             >
-              <h1 className="text-5xl md:text-[120px] p-0">
+              <h1 className="text-7xl md:text-[120px] p-0">
                 <a href="mailto:samadazeezolanrewaju@gmail.com">
                   Let's Work Together. Let's Work Together. Let's Work Together.
                   Let's Work Together. Let's Work Together. Let's Work Together.
@@ -283,7 +283,7 @@ const handleClick = () => {
             </motion.div>
           </div>
         </div>
-        <div className="p-4 md:p-5 flex flex-col md:flex-row mt- items-start md:items-center">
+        <div className="p-4 md:p-5 flex flex-col md:flex-row items-start md:items-center">
           <div>
             <h1 className="font-bold text-9xl md:text-[146px] leading-[100%] tracking-[-.085em]">
               get in <br />
@@ -321,7 +321,7 @@ const handleClick = () => {
           </div>
 
           <div className=" md:ml-40">
-            <p className="text-3xl md:text-[42px] leading-[55px] w-full md:w-[599px] mb-10">
+            <p className="text-3xl md:text-[42px] md:leading-[55px] w-full md:w-[599px] mb-10">
               Got a question, offer or project you want work or collaborate on?
               Feel free to reach out. Let’s create magic 🚀.
             </p>
