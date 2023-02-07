@@ -3,11 +3,10 @@ body{
 }
 
 .bg-lines{
-  width: 24px;
+  width: 16px;
   height: 400vh;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
-  /* margin: 0 100px; */
+  border-left: 1px dashed white;
+  border-right: 1px dashed white;
   opacity: 0.04;
   z-index: -2;
   position: absolute;
