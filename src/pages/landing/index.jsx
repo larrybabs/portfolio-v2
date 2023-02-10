@@ -1,5 +1,7 @@
 import arrow from "../../assets/img/arrowDown.svg";
 import Lifee from "../../assets/img/lifee.png";
+import Coinmeta from "../../assets/img/coinmeta.png";
+import Paytent from "../../assets/img/paytent.png";
 import html from "../../assets/img/html.png";
 import css from "../../assets/img/css.png";
 import figma from "../../assets/img/figma.png";
@@ -28,12 +30,27 @@ const marqueeVariants = {
       x: {
         repeat: Infinity,
         repeatType: "loop",
-        duration: 8,
+        duration: 10,
         ease: "linear",
       },
     },
   },
 };
+
+const arrowVariant = {
+    animate: {
+        y: [-60, 60],
+        transition: {
+          y: {
+            repeat: Infinity,
+            repeatType: "loop",
+            duration: 1.2,
+            ease: "linear",
+            type: "tween"
+          },
+        },
+      },
+}
 
 const Landing = () => {
   const [nav, setNav] = useState(false);
@@ -156,8 +173,25 @@ const Landing = () => {
         </div>
       </section>
 
-      <div className="hidden md:flex items-center">
-        <img src={arrow} alt="" className="arrow-down" />
+      <div className="hidden md:flex items-center relative">
+      {/* <motion.div 
+  animate={{
+    x: '100px'    
+  }}
+  transition={{
+    type: 'tween',
+    duration: 2
+  }}
+>
+Weeee I'm animated
+</motion.div> */}
+          <div className="arrow-down">
+          <motion.div 
+          variants={arrowVariant}
+          animate="animate">
+        <img src={arrow} alt="" className=" top-16 left-20"/>
+          </motion.div>
+          </div>
         <p className="mx-4">Scroll down</p>
       </div>
 
@@ -197,12 +231,37 @@ const Landing = () => {
                   className="w-[465px] h-[400px] rounded-3xl"
                 />
             </div>
+            <div className=" mr-5 md:w-[428px] inline-block relative cursor-pointer">
+            <a
+                    href="https://crypto-web-landing-page.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer" className="my-3 text-[22px] flex items-center opacity-80 hover:opacity-100">Coin Meta <BiLinkExternal className="mx-2"/></a>
+                <img
+                  src={Coinmeta}
+                  alt="Lifee remit project"
+                  className="w-[465px] h-[400px] rounded-3xl"
+                />
+            </div>
+            <div className=" mr-5 md:w-[428px] inline-block relative cursor-pointer">
+            <a
+                    href="/"
+                    target="_blank"
+                    rel="noreferrer" className="my-3 text-[22px] flex items-center opacity-80 hover:opacity-100">Pay | Tent <BiLinkExternal className="mx-2"/></a>
+                <img
+                  src={Paytent}
+                  alt="Lifee remit project"
+                  className="w-[465px] h-[400px] rounded-3xl"
+                />
+            </div>
            
            
             
           </div>
         </div>
-       
+        <div className=" p-10">
+              <p className="text-[30px] md:text-[37px]">"Am i sweating? No, It's just rain<br/> This bugs can never make me sweat"</p>
+              <p className="text-xl mt-3">- Obito Uchiha</p>
+          </div>
         <hr className="opacity-20"/>
       </section>
       <section id="skills">
