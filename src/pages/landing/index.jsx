@@ -39,7 +39,7 @@ const marqueeVariants = {
 
 const arrowVariant = {
     animate: {
-        y: [-60, 60],
+        y: [-30, 20],
         transition: {
           y: {
             repeat: Infinity,
