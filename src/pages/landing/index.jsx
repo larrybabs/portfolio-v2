@@ -220,17 +220,18 @@ Weeee I'm animated
         <hr className="opacity-20" />
         <div className="p-5 flex items-center">
           <div className="w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth  relative">
-            <div className=" mr-5 md:w-[428px] inline-block relative cursor-pointer">
+          <div className=" mr-5 md:w-[428px] inline-block relative cursor-pointer">
             <a
-                    href="https://www.lifeeremit.com/"
+                    href="https://paytent-fe.vercel.app/"
                     target="_blank"
-                    rel="noreferrer" className="my-3 text-[22px] flex items-center opacity-80 hover:opacity-100">Lifee Remit <BiLinkExternal className="mx-2"/></a>
+                    rel="noreferrer" className="my-3 text-[22px] flex items-center opacity-80 hover:opacity-100">Pay | Tent <BiLinkExternal className="mx-2"/></a>
                 <img
-                  src={Lifee}
+                  src={Paytent}
                   alt="Lifee remit project"
                   className="w-[465px] h-[400px] rounded-3xl"
                 />
             </div>
+            
             <div className=" mr-5 md:w-[428px] inline-block relative cursor-pointer">
             <a
                     href="https://crypto-web-landing-page.vercel.app/"
@@ -242,18 +243,18 @@ Weeee I'm animated
                   className="w-[465px] h-[400px] rounded-3xl"
                 />
             </div>
-            <div className=" mr-5 md:w-[428px] inline-block relative cursor-pointer">
+           
+           <div className=" mr-5 md:w-[428px] inline-block relative cursor-pointer">
             <a
-                    href="/"
+                    href="https://www.lifeeremit.com/"
                     target="_blank"
-                    rel="noreferrer" className="my-3 text-[22px] flex items-center opacity-80 hover:opacity-100">Pay | Tent <BiLinkExternal className="mx-2"/></a>
+                    rel="noreferrer" className="my-3 text-[22px] flex items-center opacity-80 hover:opacity-100">Lifee Remit <BiLinkExternal className="mx-2"/></a>
                 <img
-                  src={Paytent}
+                  src={Lifee}
                   alt="Lifee remit project"
                   className="w-[465px] h-[400px] rounded-3xl"
                 />
             </div>
-           
            
             
           </div>
