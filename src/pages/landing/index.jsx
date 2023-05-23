@@ -2,6 +2,7 @@ import arrow from "../../assets/img/arrowDown.svg";
 import Lifee from "../../assets/img/lifee.png";
 import Coinmeta from "../../assets/img/coinmeta.png";
 import Paytent from "../../assets/img/paytent.png";
+import Arcane from "../../assets/img/arcanecov.png";
 import html from "../../assets/img/html.png";
 import css from "../../assets/img/css.png";
 import figma from "../../assets/img/figma.png";
@@ -222,6 +223,22 @@ Weeee I'm animated
           <div className="w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth  relative">
           <div className=" mr-5 md:w-[428px] inline-block relative cursor-pointer">
             <a
+                    href="https://www.behance.net/gallery/171096001/ArcaneTX-Game"
+                    target="_blank"
+                    rel="noreferrer" className="my-3 text-[22px] flex items-center opacity-80 hover:opacity-100">Arcane TX <BiLinkExternal className="mx-2"/></a>
+                <img
+                  src={Arcane}
+                  alt="Lifee remit project"
+                  className="w-[465px] h-[400px] rounded-3xl"
+                />
+                {/* <div className="absolute p-2 bg-gray-100 top-20 right-5 rounded-md shadow">
+                  <p className="text-neutral-800 text-[12px]">
+                  UI/UX Design
+                  </p>
+                </div> */}
+            </div>
+          <div className=" mr-5 md:w-[428px] inline-block relative cursor-pointer">
+            <a
                     href="https://paytent-fe.vercel.app/"
                     target="_blank"
                     rel="noreferrer" className="my-3 text-[22px] flex items-center opacity-80 hover:opacity-100">Pay | Tent <BiLinkExternal className="mx-2"/></a>
@@ -259,10 +276,10 @@ Weeee I'm animated
             
           </div>
         </div>
-        <div className=" p-10">
+        {/* <div className=" p-10">
               <p className="text-[30px] md:text-[37px]">"Am i sweating? No, It's just rain<br/> This bugs can never make me sweat"</p>
               <p className="text-xl mt-3">- Obito Uchiha</p>
-          </div>
+          </div> */}
         <hr className="opacity-20"/>
       </section>
       <section id="skills">
